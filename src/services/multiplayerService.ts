@@ -105,6 +105,7 @@ export class MultiplayerService {
       )
       .subscribe();
   }
+  /**
    * Global Matchmaking logic
    */
   static async startGlobalMatchmaking(playerId: string, onMatchFound: (room: GameRoom, role: Player) => void) {
