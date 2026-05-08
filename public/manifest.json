@@ -1,0 +1,17 @@
+{
+  "name": "XO-Earn | Play to Earn",
+  "short_name": "XO-Earn",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F4E8",
+  "theme_color": "#E8575A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/xo_earn_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
