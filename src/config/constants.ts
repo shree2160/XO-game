@@ -29,6 +29,7 @@ export const CSS = {
   SURFACE:       '#FFFFFF',
   SUCCESS:       '#27AE60',
   DANGER:        '#E74C3C',
+  GRID_LINE:     '#DDD6C9',
 };
 
 // ── Game Rules ──

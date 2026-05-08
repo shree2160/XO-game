@@ -100,7 +100,7 @@ export class AuthScene extends Phaser.Scene {
 
     // Skip
     const skip = this.add.text(cx, cy + 320, 'Continue as Guest', {
-      fontFamily: FONT_FAMILY, fontSize: '18px', color: CSS.TEXT_SECONDARY, textDecoration: 'underline'
+      fontFamily: FONT_FAMILY, fontSize: '18px', color: CSS.TEXT_SECONDARY
     }).setOrigin(0.5).setInteractive({ useHandCursor: true }).setPadding(20);
     skip.on('pointerdown', () => this.scene.start('Home'));
   }

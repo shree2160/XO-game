@@ -20,7 +20,7 @@ export class LeaderboardScene extends Phaser.Scene {
 
     // Back Button
     const backBtn = this.add.text(cx, GAME_HEIGHT - 60, '← Back to Dashboard', {
-      fontFamily: FONT_FAMILY, fontSize: '20px', color: CSS.TEXT_SECONDARY, textDecoration: 'underline'
+      fontFamily: FONT_FAMILY, fontSize: '20px', color: CSS.TEXT_SECONDARY
     }).setOrigin(0.5).setInteractive({ useHandCursor: true }).setPadding(20);
     
     backBtn.on('pointerdown', () => this.scene.start('Home'));

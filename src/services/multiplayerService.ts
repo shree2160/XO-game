@@ -93,7 +93,18 @@ export class MultiplayerService {
   /**
    * Subscribe to real-time updates for a specific room
    */
-  /**
+  static subscribeToRoom(roomId: string, callback: (newRoom: GameRoom) => void) {
+    return supabase
+      .channel(`room:${roomId}`)
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'game_rooms', filter: `id=eq.${roomId}` },
+        (payload) => {
+          callback(payload.new as GameRoom);
+        }
+      )
+      .subscribe();
+  }
    * Global Matchmaking logic
    */
   static async startGlobalMatchmaking(playerId: string, onMatchFound: (room: GameRoom, role: Player) => void) {

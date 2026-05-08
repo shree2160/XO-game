@@ -3,6 +3,8 @@ import { GAME_WIDTH, GAME_HEIGHT, COLORS } from './config/constants';
 import { BootScene } from './scenes/BootScene';
 import { AuthScene } from './scenes/AuthScene';
 import { MatchmakingScene } from './scenes/MatchmakingScene';
+import { WithdrawalScene } from './scenes/WithdrawalScene';
+import { LeaderboardScene } from './scenes/LeaderboardScene';
 import { HomeScene } from './scenes/HomeScene';
 import { GameScene } from './scenes/GameScene';
 import { PostGameScene } from './scenes/PostGameScene';

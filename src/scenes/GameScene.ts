@@ -50,7 +50,7 @@ export class GameScene extends Phaser.Scene {
     // If multiplayer, sync from room state
     if (this.mode === 'multiplayer' && this.room) {
       this.syncFromRoom(this.room);
-      this.subscription = MultiplayerService.subscribeToRoom(this.room.id, (newRoom) => {
+      this.subscription = MultiplayerService.subscribeToRoom(this.room.id, (newRoom: GameRoom) => {
         this.syncFromRoom(newRoom);
       });
     }

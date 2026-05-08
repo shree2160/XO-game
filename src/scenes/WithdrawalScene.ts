@@ -67,7 +67,7 @@ export class WithdrawalScene extends Phaser.Scene {
 
     // Back Button
     const back = this.add.text(cx, cy + 340, 'Back to Home', {
-      fontFamily: FONT_FAMILY, fontSize: '18px', color: CSS.TEXT_SECONDARY, textDecoration: 'underline'
+      fontFamily: FONT_FAMILY, fontSize: '18px', color: CSS.TEXT_SECONDARY
     }).setOrigin(0.5).setInteractive({ useHandCursor: true }).setPadding(20);
     back.on('pointerdown', () => this.scene.start('Home'));
   }
